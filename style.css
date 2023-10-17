@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 64px 24px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 3rem;
+    transition: 0.2s;
+}
+
+main section h2{
+    font-size: 2.4rem;
+}
+
+main section div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 32px auto;
+    gap: 16px;
+}
+
+main section div a{
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+    main section div a{
+        flex-basis: 680px;       
+    }
+}
+
+main section div article{
+    min-height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+main section div article:hover img{
+    width: 270px;
+}
+
+main section div article img{
+    width: 250px;
+    margin-right: 10px;
+}
+
+main section div article h2{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: black;
+}
